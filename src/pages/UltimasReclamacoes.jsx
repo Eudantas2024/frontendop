@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaUser, FaEnvelope, FaCommentDots, FaSearch } from 'react-icons/fa';
+import { FaUser, FaEnvelope, FaCommentDots, FaSearch, FaBullhorn } from 'react-icons/fa';
 import './UltimasReclamacoes.css';
 
 function UltimasReclamacoes() {
@@ -56,15 +56,21 @@ function UltimasReclamacoes() {
                     ) : (
                         reclamacoesFiltradas.map((rec) => (
                             <div key={rec._id} className="card-reclamacao">
-                                <p>
+
+                                <p className='cliente'>
                                     <FaUser className="icone-user" /> <strong>Cliente:</strong> {rec.username}
+                                </p>
+                                <p className='feedback'>
+                                    <FaBullhorn className="icone-megafone" /> <strong>Tipo de Feedback:</strong> {rec.tipoFeedback}
                                 </p>
                                 <p>
                                     <FaEnvelope className="icone-envelope" /> <strong>Assunto:</strong> {rec.titulo}
                                 </p>
                                 <p>
-                                    <FaCommentDots className="icone-msg" /> <strong>Mensagem:</strong> {rec.mensagem}
+                                    <FaCommentDots className="icone-msg" /> <strong>Mensagem:</strong> <br /><br /> {rec.mensagem}
                                 </p>
+
+
                                 <div className="data-reclamacao">
                                     <strong>Registrado em:</strong>{' '}
                                     {rec.createdAt

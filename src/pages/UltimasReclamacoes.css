@@ -52,6 +52,9 @@
   color: #ff9800;
 }
 
+.icone-megafone {
+  color: #ff0000;
+}
 .data-reclamacao {
   margin-top: 10px;
   color: #666;
@@ -84,4 +87,14 @@
   transform: translateY(-50%);
   color: #163de7;
   pointer-events: none;
+}
+
+.cliente{
+  text-transform:uppercase;
+  font-size: 0.8rem;
+}
+
+.feedback{
+  text-transform:uppercase;
+  color: #697e88;
 }
