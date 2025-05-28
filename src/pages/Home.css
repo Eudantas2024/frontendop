@@ -258,3 +258,9 @@
     padding: 25px;
   }
 }
+
+.logo11 {
+  opacity: 1; /* Ajuste o valor entre 0 (completamente transparente) e 1 (completamente opaco) */
+  height: 220px;
+
+}

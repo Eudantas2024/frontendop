@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaUser, FaBuilding, FaPlusCircle, FaCog, FaHome, FaSignInAlt, FaUserPlus, FaSignOutAlt, FaCommentDots, FaChartBar, FaBullhorn } from 'react-icons/fa';
 
@@ -11,21 +12,24 @@ const Header = ({ userType, onLogout }) => {
   };
 
   return (
+
     <nav style={{ backgroundColor: '#003366', padding: '15px 30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       {/* Logo */}
-      <Link to="/" style={{ textDecoration: 'none' }}>
-        <img
-          src="/logo_opina_plus.png"
+
+      <Link to="/" className="logo-link">
+
+        <img className='logoopina'
+          src="./public/logo6.svg"
           alt="Opina+ Logo"
-          style={{ height: '40px', marginRight: '10px' }}
         />
       </Link>
+
 
       <div>
         {/* Corrigido: link leva para /reclamacoes */}
         <Link to="/" style={linkStyle}><FaHome /> Início</Link>
         <Link to="/reclamacoes" style={linkStyle}><FaBullhorn />Feedbacks</Link>
-        
+
 
         {!userType ? (
           <>
@@ -33,7 +37,7 @@ const Header = ({ userType, onLogout }) => {
             <Link to="/cadastro" style={linkStyle}><FaUserPlus /> Cadastro</Link>
             <Link to="/PainelAdmin" style={linkStyle}><FaCog />Admin</Link>
           </>
-          
+
         ) : (
           <>
             {userType === 'cliente' && (

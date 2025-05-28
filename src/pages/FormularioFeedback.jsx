@@ -89,6 +89,7 @@ export default function FormReclamacao() {
         </div>
 
         <div className="form-group">
+             {/* colocar a limitação de caractere 1500  */}
           <label htmlFor="mensagem">Mensagem</label>
           <textarea
             id="mensagem"
@@ -97,6 +98,8 @@ export default function FormReclamacao() {
             onChange={(e) => setMensagem(e.target.value)}
           />
         </div>
+
+     
 
         <div className="form-group">
           <label htmlFor="anexos">Anexar arquivos</label>
