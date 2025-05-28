@@ -258,3 +258,64 @@
     font-size: 1.5em;
   }
 }
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.botao-logout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.botao-logout:hover {
+  background-color: #b71c1c;
+}
+
+.card-reclamacao {
+  position: relative; /* Define como referência para o botão */
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #f9f9f9;
+}
+
+button.excluir {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button.excluir:hover {
+  background-color: #b71c1c;
+}
+button.aprovar {
+  position: absolute;
+  right: 80px;
+  bottom: 10px;
+  background-color: #0b920b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button.aprovar:hover {
+  background-color: #0b5a1c;
+}

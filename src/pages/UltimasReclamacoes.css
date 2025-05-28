@@ -1,6 +1,7 @@
 .container {
   max-width: 800px;
   margin: auto;
+ margin-top: 0.rem;
   padding-right: 50px;
 }
 
@@ -25,6 +26,7 @@
 
 .card-reclamacao {
   background: #fff;
+  text-align: left;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px #ccc;
@@ -50,6 +52,7 @@
 
 .icone-msg {
   color: #ff9800;
+  font-size: 1rem;
 }
 
 .icone-megafone {
@@ -94,7 +97,16 @@
   font-size: 0.8rem;
 }
 
+.assunto{
+  text-transform:capitalize;
+  
+}
+
 .feedback{
-  text-transform:uppercase;
+  text-transform:capitalize;
   color: #697e88;
+}
+.mensagem-texto {
+  font-size: 13px; /* Ajuste conforme necessário */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

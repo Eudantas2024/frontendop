@@ -81,7 +81,7 @@ export default function FormReclamacao() {
             onChange={(e) => setTipoFeedback(e.target.value)}
           >
             <option value="sugestao">Sugestão</option>
-            <option value="problema">Problema</option>
+            <option value="problema">Crítica</option>
             <option value="elogio">Elogio</option>
             <option value="duvida">Dúvida</option>
             <option value="outros">Outros</option>
@@ -96,7 +96,11 @@ export default function FormReclamacao() {
             placeholder="Escreva sua mensagem..."
             value={mensagem}
             onChange={(e) => setMensagem(e.target.value)}
+            maxLength={1500} // Define o limite de 1500 caracteres
+            
           />
+          <p>{mensagem.length} / 1500 caracteres</p>
+
         </div>
 
      

@@ -19,6 +19,14 @@
   opacity: 0.8;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #003366;
+  z-index: 1000;
+}
+
+
 nav ul {
   list-style: none;
   display: flex;
@@ -45,9 +53,9 @@ nav li a:hover {
   }
   
 .logoopina {
-  height: 40px;
+  height: 44px;
   margin-left: 100px;
   padding: 0;
-  transform: scale(1.9)
+  transform: scale(1.4)
  
   }
