@@ -10,7 +10,7 @@ const Home = () => {
       {/* Seção 1: Banner de Boas-Vindas */}
       <section className="hero-section">
         <div className="hero-content">
-        <img src={'/public/logo.svg'} alt="Logo Opina+" className="logo11" /> {/* Adicione esta linha para inserir a logo */}
+        <img src={'/public/logo6.svg'} alt="Logo Opina+" className="logo11" /> {/* Adicione esta linha para inserir a logo */}
           {/* <h1>Bem-vindo</h1> */}
           <p className="slogan">Sua voz importa. Conectando clientes e empresas para um futuro melhor.</p>
           <div className="cta-buttons">
